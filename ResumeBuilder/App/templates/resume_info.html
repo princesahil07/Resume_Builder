@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>Download Resume</title>
+</head>
+<body>
+
+<center class="mt-5">
+	<h3>Resume Builder</h3>
+</center>
+<form method="POST">
+	<div class="container mt-5">
+		<div class="row">
+			{% csrf_token %}
+			<h3>Personal Details</h3>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Full Name</label>
+	    			<input type="text" name="full_name" class="form-control" placeholder="Enter your Full Name">
+	  			</div>
+			</div>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Designations</label>
+	    			<input type="text" name="designations" class="form-control" placeholder="Enter your Designations">
+	  			</div>
+			</div>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Mobile No.</label>
+	    			<input type="text" name="mobile_no" class="form-control" placeholder="Enter your mobile no.">
+	  			</div>
+			</div>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Email</label>
+	    			<input type="email" name="email" class="form-control" placeholder="Enter your mobile no.">
+	  			</div>
+			</div>
+			<div class="col-8 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Address</label>
+	    			<input type="text" name="address" class="form-control" placeholder="Enter your Address">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2 mb-3">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Summary</label>
+	    			<textarea class="form-control" name="summary" placeholder="write Summary here" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+
+			<h3>Skills Details</h3>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill1" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill2" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill3" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill4" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill5" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill6" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill7" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill8" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2 mb-3">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Skill-1</label>
+	    			<input type="text" name="skill9" class="form-control" placeholder="Enter your Skill-1">
+	  			</div>
+			</div>
+
+			<h3>Eductions Details</h3>
+			<h5 class="mt-2">Eductions 1</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Course Name</label>
+	    			<input type="text" name="course_name_1" class="form-control" placeholder="example : Bachelor's in Computer Application">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">College Name</label>
+	    			<input type="text" name="college_name_1" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Address</label>
+	    			<input type="text" name="college_address_1" class="form-control" placeholder="Enter College Address">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Start Date</label>
+	    			<input type="date" name="c_start_date_1" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">End Date</label>
+	    			<input type="date" name="c_end_date_1" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+
+			<h5 class="mt-2">Eductions 2</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Course Name</label>
+	    			<input type="text" name="course_name_2" class="form-control" placeholder="example : Bachelor's in Computer Application">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">College Name</label>
+	    			<input type="text" name="college_name_2" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Address</label>
+	    			<input type="text" name="college_address_2" class="form-control" placeholder="Enter College Address">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Start Date</label>
+	    			<input type="date" name="c_start_date_2" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+			<div class="col-3 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">End Date</label>
+	    			<input type="date" name="c_end_date_2" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+
+			<h3 class="mt-5">Work Experiance</h3>
+			<h5 class="mt-2">Experiance 1</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Company Name</label>
+	    			<input type="text" name="company_name_1" class="form-control" placeholder="Enter Company Name">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Designations</label>
+	    			<input type="text" name="company_desgn_1" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" name="company_disc_1" placeholder="Discription" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Start Date</label>
+	    			<input type="date" name="com_start_1" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">End Date</label>
+	    			<input type="date" name="com_end_1" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+
+			<h5 class="mt-2">Experiance 2</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Company Name</label>
+	    			<input type="text" name="company_name_2" class="form-control" placeholder="Enter Company Name">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Designations</label>
+	    			<input type="text" name="company_desgn_2" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" placeholder="Discription" id="floatingTextarea2" name="company_disc_2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Start Date</label>
+	    			<input type="date" name="com_start_2" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">End Date</label>
+	    			<input type="date" name="com_end_2" class="form-control" placeholder="example :  Courant Institute of Mathematical Science">
+	  			</div>
+			</div>
+
+			<h3>Project Details</h3>
+			<h5 class="mt-2">Project 1</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Project Name</label>
+	    			<input type="text" name="project_name_1" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" name="project_disc_1" placeholder="Discription" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+			<h5 class="mt-2">Project 2</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Project Name</label>
+	    			<input type="text" name="project_name_2" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" name="project_disc_2" placeholder="Discription" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+			<h5 class="mt-2">Project 3</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Project Name</label>
+	    			<input type="text" name="project_name_3" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" name="project_disc_3" placeholder="Discription" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+
+			<h3>Langauges</h3>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Langauge-1</label>
+	    			<input type="text" name="lang_1" class="form-control" placeholder="Langauge-1">
+	  			</div>
+			</div>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Langauge-2</label>
+	    			<input type="text" name="lang_2" class="form-control" placeholder="Langauge-2">
+	  			</div>
+			</div>
+			<div class="col-4 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Langauge-3</label>
+	    			<input type="text" name="lang_3" class="form-control" placeholder="Langauge-3">
+	  			</div>
+			</div>
+
+			<h3>Awards Details</h3>
+			<h5 class="mt-2">Award 1</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Award Name</label>
+	    			<input type="text" name="award_name_1" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" name="award_disc_1" placeholder="Discription" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+			<h5 class="mt-2">Award 2</h5>
+			<div class="col-6 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Award Name</label>
+	    			<input type="text" name="award_name_2" class="form-control" placeholder="Enter Designations">
+	  			</div>
+			</div>
+			<div class="col-12 mt-2">
+				<div class="mb-3">
+	    			<label for="exampleInputPassword1" class="form-label">Discription</label>
+	    			<textarea class="form-control" name="award_disc_2" placeholder="Discription" id="floatingTextarea2" style="height: 100px"></textarea>
+	  			</div>
+			</div>
+
+			<center>
+				<button type="submit" name="info" class="btn btn-primary mt-5 mb-5">Submit</button>
+			</center>
+		</div>
+	</div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
